@@ -1,6 +1,8 @@
 import Bulb from "./Bulb";
 
-function Lights() {
+function Lights({ bulbPos }) {
+    console.log("bulbPos", bulbPos);
+
     return (
         <>
             <directionalLight
@@ -12,7 +14,7 @@ function Lights() {
                 castShadow
             />
 
-            <Bulb position={[-7, 3, 0]} />
+            <Bulb position={[bulbPos[0], bulbPos[1], bulbPos[2]]} />
             <Bulb position={[0, 3, 0]} />
             <Bulb position={[7, 3, 0]} />
         </>
