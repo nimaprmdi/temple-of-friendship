@@ -1,6 +1,6 @@
-# React-Shop - [Demo](https://demo.vitathemes.com/React-Shop/)
+# React-Three-Fiber-Starter
 
-React-Shop is a Starter for Three and React-Three-Fiber
+React-Three-Fiber-Starter is a Starter for Three and React-Three-Fiber
 
 ## Features
 
