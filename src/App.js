@@ -6,10 +6,9 @@ import ColorPicker from "./components/ColorPicker";
 import Dragable from "./components/Dragable";
 import Kirche from "./components/Kirche";
 import CameraControls from "./components/CameraControls";
-import CameraButton from "./components/CameraButton";
 import Lights from "./components/Lights";
 import Effects from "./components/Effects";
-import BackgroundColor from "./components/BackgroundColor";
+import CustomMesh from "./components/CustomMesh";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Physics } from "@react-three/cannon";
@@ -36,13 +35,14 @@ function App() {
             style={{ height: "100vh", width: "100vw" }}
         >
             <ColorPicker />
-            <CameraButton />
             <Canvas
                 onCreated={(state) => state.gl.setClearColor("#92CFFF")}
                 frameloop="demand"
                 camera={{ position: [7, 7, 7] }}
                 shadows
             >
+                <CustomMesh />
+
                 {/* <color attach="background" args={[opts.bgColor]} /> */}
                 <CameraControls />
 
@@ -55,8 +55,11 @@ function App() {
                 <Lights bulbPos={[opts.bulbPosX, opts.bulbPosY, opts.bulbPosZ]} />
 
                 <axesHelper args={[5]} />
+
                 <Physics>
-                    <Kirche />
+                    <Suspense>
+                        <Kirche />
+                    </Suspense>
 
                     <Dragable>
                         <Suspense fallback={null}>

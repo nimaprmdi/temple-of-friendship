@@ -20,8 +20,6 @@ function Model(props) {
         mixer?.update(delta);
     });
 
-    console.log("there", model);
-
     model.scene.traverse((child) => {
         if (child.isMesh) {
             child.castShadow = true;
