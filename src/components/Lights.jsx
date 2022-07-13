@@ -1,8 +1,6 @@
 import Bulb from "./Bulb";
 
 function Lights({ bulbPos }) {
-    console.log("bulbPos", bulbPos);
-
     return (
         <>
             <directionalLight

@@ -6,11 +6,11 @@ const CustomMesh = () => {
     return (
         <mesh position={[0, 25, 0]} scale={new Array(3).fill(50)} visible>
             <Sparkles
-                count={500}
+                count={600}
                 color={"#ffffff"}
-                scale={new THREE.Vector3(1.5, 1.5, 1.5)}
-                size={20}
-                speed={4}
+                scale={new THREE.Vector3(3, 3, 3)}
+                size={40}
+                speed={5}
                 transparent
             />
         </mesh>

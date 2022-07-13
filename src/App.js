@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import Orbit from "./components/Orbit";
-import Box from "./components/Box";
 import Floor from "./components/Floor";
-import ColorPicker from "./components/ColorPicker";
-import Dragable from "./components/Dragable";
-import Kirche from "./components/Kirche";
+import Temple from "./components/Temple";
 import CameraControls from "./components/CameraControls";
 import Lights from "./components/Lights";
 import Effects from "./components/Effects";
 import CustomMesh from "./components/CustomMesh";
+import Birds from "./components/Birds";
+import DatGui, { DatNumber, DatColor } from "react-dat-gui";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Physics } from "@react-three/cannon";
-import DatGui, { DatNumber, DatColor } from "react-dat-gui";
 import "./assets/css/css.css";
 
 function App() {
@@ -34,7 +32,6 @@ function App() {
             }}
             style={{ height: "100vh", width: "100vw" }}
         >
-            <ColorPicker />
             <Canvas
                 onCreated={(state) => state.gl.setClearColor("#92CFFF")}
                 frameloop="demand"
@@ -43,9 +40,9 @@ function App() {
             >
                 <CustomMesh />
 
-                {/* <color attach="background" args={[opts.bgColor]} /> */}
                 <CameraControls />
 
+                {/* <color attach="background" args={[opts.bgColor]} /> */}
                 <fog attach="fog" args={["#92CFFF", 10, 200]} />
 
                 <Orbit />
@@ -57,19 +54,13 @@ function App() {
                 <axesHelper args={[5]} />
 
                 <Physics>
-                    <Suspense>
-                        <Kirche />
+                    <Suspense fallback={null}>
+                        <Birds />
                     </Suspense>
 
-                    <Dragable>
-                        <Suspense fallback={null}>
-                            <Box position={[-7, 1, 0]} />
-                        </Suspense>
-
-                        <Suspense fallback={null}>
-                            <Box position={[7, 1, 0]} />
-                        </Suspense>
-                    </Dragable>
+                    <Suspense>
+                        <Temple />
+                    </Suspense>
 
                     <Floor bgColor={opts.bgColor} position={[0, -0.5, 0]} />
 
