@@ -1,0 +1,20 @@
+.c-social-card {
+    width: 4.16vw;
+    height: 8.53vh;
+    background-color: transparentize($color: $accent_color, $amount: 0.4);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $secondary_color;
+    }
+}
+
+.c-social-card__icon {
+    color: $black_color;
+}

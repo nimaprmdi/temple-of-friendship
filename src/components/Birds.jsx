@@ -3,9 +3,9 @@ import Bird from "./Bird";
 const Birds = () => {
     return new Array(50).fill().map((_, i) => {
         const x = (20 + Math.random() * 80) * (Math.round(Math.random()) ? -1 : 1);
-        const y = 10 + Math.random() * 40;
+        const y = 8 + Math.random() * 40;
         const z = -5 + Math.random() * 10;
-        const bird = ["Stork", "Parrot", "Flamingo"][Math.round(Math.random() * 2)];
+        const bird = ["Stork", "Parrot"][Math.round(Math.random() * 1)];
         let speed = bird === "Stork" ? 0.05 : bird === "Flamingo" ? 0.25 : 3;
         let factor =
             bird === "Stork"
@@ -20,7 +20,7 @@ const Birds = () => {
                 rotation={[0, x > 0 ? Math.PI : 0, 0]}
                 speed={speed}
                 factor={factor}
-                url={`/${bird}.glb`}
+                url={process.env.PUBLIC_URL + `/${bird}.glb`}
             />
         );
     });

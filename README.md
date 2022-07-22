@@ -1,6 +1,8 @@
-# React-Three-Fiber-Starter
+# Temple-Of-Friendship
 
-React-Three-Fiber-Starter is a Starter for Three and React-Three-Fiber
+Temple-Of-Friendship is a story 3D story telling with Three.js and React-Three-Fiber
+
+![Home Page](/src/assets/images/screenshot.png)
 
 ## Features
 
@@ -52,3 +54,21 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 React-Three-Fiber is distributed under the terms of the GNU GPL version 3.0
+
+I (@nimaprmdi) Would Like to thank the creators of Three.js, Drei, React-Three-Fiber, and eggnot (temple-of-friendship 3D model) and every contributer for creating these amazing assets.
+
+Social Icons, Arrow icons, Reply Icons,Magnifier Icons & close icons by iconify
+License: Apache 2.0, http://www.apache.org/licenses/LICENSE-2.0
+Source: https://iconify.design/
+
+react-three-fiber by pmndrs
+License: MIT license, https://opensource.org/licenses/MIT
+Source: https://github.com/pmndrs/react-three-fiber
+
+Drei by pmndrs
+License: MIT license, https://opensource.org/licenses/MIT
+Source: https://github.com/pmndrs/drei
+
+Temple of friendship 3D model by eggnot
+License: CC Attribution, https://creativecommons.org/licenses/by/4.0/
+Source: https://sketchfab.com/3d-models/temple-of-friendship-effe849f9af346149169fb02db6cd049

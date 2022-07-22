@@ -1,0 +1,182 @@
+/* Container */
+.u-fixed-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Display */
+.u-flex {
+    display: flex;
+}
+
+/* flex helpers */
+.u-flex-wrap {
+    flex-wrap: wrap;
+}
+
+.u-flex-end {
+    justify-content: flex-end;
+}
+
+.u-gap-10 {
+    gap: 50px;
+}
+
+/* Display Helpers */
+.u-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.u-flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.u-flex-between-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.u-flex-left-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.u-flex-right-center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Opacity */
+
+.u-opacity-0 {
+    opacity: 0;
+}
+
+.u-opacity-6 {
+    opacity: 0.65;
+}
+
+/* Background Colors */
+.u-bg-primary {
+    background-color: transparentize($color: $primary_color, $amount: 0.4);
+}
+
+.u-bg-secondary {
+    background-color: $secondary_color;
+}
+
+.u-bg-accent {
+    background-color: $accent_color;
+}
+
+.u-bg-white {
+    background-color: $white_color;
+}
+
+.u-bg-black {
+    background-color: $black_color;
+}
+
+/* Colors */
+.u-color-primary {
+    color: $primary_color;
+}
+
+.u-color-secondary {
+    color: $secondary_color;
+}
+
+.u-color-accent {
+    color: $accent_color;
+}
+
+.u-color-white {
+    color: $white_color;
+}
+
+.u-color-black {
+    color: $black_color;
+}
+
+/* Radius */
+.u-radius {
+    border-radius: 10px;
+}
+
+/* width */
+.u-width-100 {
+    width: 100%;
+}
+
+.u-width-50 {
+    width: 50%;
+}
+
+.u-width-45 {
+    width: 45%;
+}
+
+/* Max Width */
+
+.u-max-w-55 {
+    max-width: 55%;
+}
+
+.u-max-w-50 {
+    max-width: 50%;
+}
+
+.u-max-w-45 {
+    max-width: 45%;
+}
+
+/* Margin */
+
+.u-no-margin {
+    margin: 0;
+}
+
+.u-mt-8-px {
+    margin-top: 8px;
+}
+
+.u-mr-18-px {
+    margin-right: 18px;
+}
+
+.u-mt-24-px {
+    margin-top: 24px;
+}
+
+.u-mr-5 {
+    margin-right: 5%;
+}
+
+.u-ml-5 {
+    margin-left: 5%;
+}
+
+/* Animations */
+.u-anime-fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/* Animations Delay */
+
+.u-anime-delay-1 {
+    animation-delay: 1s;
+}

@@ -10,7 +10,7 @@ const Floor = (props) => {
 
     return (
         <mesh ref={ref} {...props} receiveShadow>
-            <boxBufferGeometry args={[800, 1, 800]} />
+            <boxBufferGeometry args={[1500, 1, 1500]} />
             <meshPhysicalMaterial color={"#89D7FF"} transparent />
         </mesh>
     );

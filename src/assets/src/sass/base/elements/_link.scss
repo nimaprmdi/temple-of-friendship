@@ -1,0 +1,27 @@
+/*------------------------------------*\
+  #Links
+\*------------------------------------*/
+a,
+.a {
+    color: $link_color; //767676
+    transition: 0.3s;
+    -webkit-text-decoration: none; /* safari still uses vendor prefix */
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white_color;
+        text-decoration: underline;
+    }
+
+    &:focus {
+        outline: 1px solid $white_color;
+        border-radius: 1px;
+    }
+
+    &:hover,
+    &:active {
+        outline: none;
+    }
+}

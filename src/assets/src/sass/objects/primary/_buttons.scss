@@ -1,0 +1,29 @@
+button,
+.wp-block-button__link,
+.o-btn,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    border: none;
+    background-color: $secondary_color;
+    color: $black_color;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 400;
+    padding: 12px 36px;
+    text-decoration: none;
+    line-height: inherit;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $accent_color; // FF00B8
+        text-decoration: none;
+    }
+
+    &:visited,
+    &:focus {
+        text-decoration: none;
+    }
+}
