@@ -21,7 +21,7 @@ Temple-Of-Friendship is a story 3D story telling with Three.js and React-Three-F
 ## Theme structure
 
 ```shell
-React-Three-Fiber/                  # → Root of your Starter
+Temple-Of-Friendship/                  # → Root of your Starter
 │── node_modules/                   # → Node.js packages
 ├── public/                         # → Contains static files
 │   ├── assets/                     # → All Starter assets
