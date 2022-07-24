@@ -37,11 +37,11 @@ React-Three-Fiber/                  # → Root of your Starter
 
 ## License
 
-React-Three-Fiber is licensed under [GNU GPL Version 3].
+Temple-Of-Friendship is licensed under [GNU GPL Version 3].
 
 ## Copyright
 
-React-Three-Fiber is distributed under the terms of the GNU GPL.
+Temple-Of-Friendship is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -53,9 +53,9 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-React-Three-Fiber is distributed under the terms of the GNU GPL version 3.0
+Temple-Of-Friendship is distributed under the terms of the GNU GPL version 3.0
 
-I Would Like to thank the creators of Three.js, Drei, React-Three-Fiber, and eggnot (temple-of-friendship 3D model) and every contributer for creating these amazing assets.
+I Would Like to thank the creators of Three.js, Drei, Temple-Of-Friendship, and eggnot (temple-of-friendship 3D model) and every contributer for creating these amazing assets.
 
 Social Icons, Arrow icons, Reply Icons,Magnifier Icons & close icons by iconify
 License: Apache 2.0, http://www.apache.org/licenses/LICENSE-2.0
