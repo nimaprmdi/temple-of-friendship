@@ -55,7 +55,7 @@ GNU General Public License for more details.
 
 React-Three-Fiber is distributed under the terms of the GNU GPL version 3.0
 
-I (@nimaprmdi) Would Like to thank the creators of Three.js, Drei, React-Three-Fiber, and eggnot (temple-of-friendship 3D model) and every contributer for creating these amazing assets.
+I Would Like to thank the creators of Three.js, Drei, React-Three-Fiber, and eggnot (temple-of-friendship 3D model) and every contributer for creating these amazing assets.
 
 Social Icons, Arrow icons, Reply Icons,Magnifier Icons & close icons by iconify
 License: Apache 2.0, http://www.apache.org/licenses/LICENSE-2.0
