@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/temple-of-friendship/static/css/main.969de554.css",
+    "main.css": "/temple-of-friendship/static/css/main.dacd90bf.css",
     "main.js": "/temple-of-friendship/static/js/main.c462e3b0.js",
     "static/js/787.b1632745.chunk.js": "/temple-of-friendship/static/js/787.b1632745.chunk.js",
     "static/media/temple(1).jpg": "/temple-of-friendship/static/media/temple(1).ff63eca90c2e49edab7b.jpg",
     "static/media/temple(2).jpg": "/temple-of-friendship/static/media/temple(2).7c8ed898dd9b9c94ece3.jpg",
     "static/media/temple(3).jpg": "/temple-of-friendship/static/media/temple(3).0930390b7d59ca5fbfeb.jpg",
     "index.html": "/temple-of-friendship/index.html",
-    "main.969de554.css.map": "/temple-of-friendship/static/css/main.969de554.css.map",
+    "main.dacd90bf.css.map": "/temple-of-friendship/static/css/main.dacd90bf.css.map",
     "main.c462e3b0.js.map": "/temple-of-friendship/static/js/main.c462e3b0.js.map",
     "787.b1632745.chunk.js.map": "/temple-of-friendship/static/js/787.b1632745.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.969de554.css",
+    "static/css/main.dacd90bf.css",
     "static/js/main.c462e3b0.js"
   ]
 }
