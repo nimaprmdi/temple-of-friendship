@@ -4,12 +4,17 @@ import Scene_1 from "../views/Scene_1";
 import Scene_2 from "../views/Scene_2";
 import Scene_3 from "../views/Scene_3";
 
-const Page = ({ page, onHandleViewChange, isAnimeLoaded }) => {
+const Page = ({ page, onHandleViewChange, isAnimeLoaded, isLoading }) => {
     const handleSwitch = (page) => {
         switch (page) {
             case "home":
                 return (
-                    <Home isAnimeLoaded={isAnimeLoaded} page={page} onHandleViewChange={(e) => onHandleViewChange(e)} />
+                    <Home
+                        isLoading={isLoading}
+                        isAnimeLoaded={isAnimeLoaded}
+                        page={page}
+                        onHandleViewChange={(e) => onHandleViewChange(e)}
+                    />
                 );
                 break;
             case "scene_1":

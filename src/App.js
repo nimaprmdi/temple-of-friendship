@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import state from "./state";
 import Orbit from "./components/Orbit";
 import Floor from "./components/Floor";
 import Temple from "./components/Temple";
@@ -7,20 +8,28 @@ import Lights from "./components/Lights";
 import Effects from "./components/Effects";
 import CustomMesh from "./components/CustomMesh";
 import Birds from "./components/Birds";
-import DatGui, { DatNumber, DatColor } from "react-dat-gui";
+import CameraButton from "./components/CameraButton";
+import Page from "./components/Page";
+import PreLoader from "./components/PreLoader";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Physics } from "@react-three/cannon";
-import CameraButton from "./components/CameraButton";
-import Page from "./components/Page";
+import { isMobile } from "react-device-detect";
+import { useProgress } from "@react-three/drei";
 import "./assets/src/sass/App.scss";
 import "./assets/css/css.css";
-import state from "./state";
+// import DatGui, { DatNumber, DatColor } from "react-dat-gui";
 
 function App() {
     const [currentView, setCurrentView] = useState("home");
     const [page, setPage] = useState("home");
     const [isAnimeLoaded, setIsAnimeLoaded] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+
+    function Loading() {
+        const { active, progress, errors, item, loaded, total } = useProgress();
+        return loaded > 0 && setIsLoading(false);
+    }
 
     const [opts, setOpts] = useState({
         bulbPosX: 33.5558,
@@ -123,15 +132,23 @@ function App() {
             }}
             style={{ height: "100vh", width: "100vw" }}
         >
+            <PreLoader isLoading={isLoading} />
+
             <CameraButton onHandleViewChange={(e) => handleClick(e)} setPage={setPage} />
 
-            <Page isAnimeLoaded={state.isAnimeFinish} page={page} onHandleViewChange={(e) => handleClick(e)} />
+            <Page
+                isLoading={isLoading}
+                isAnimeLoaded={state.isAnimeFinish}
+                page={page}
+                onHandleViewChange={(e) => handleClick(e)}
+            />
 
             <Canvas
                 onCreated={(state) => state.gl.setClearColor("#92CFFF")}
                 frameloop="demand"
                 camera={{ position: [20.868617986073411, 60.385716979477195, -200.9811707323818] }}
                 shadows
+                dpr={isMobile ? window.devicePixelRatio / 3 : window.devicePixelRatio}
             >
                 <CustomMesh />
 
@@ -150,11 +167,11 @@ function App() {
                 <axesHelper args={[5]} />
 
                 <Physics>
-                    <Suspense fallback={null}>
+                    <Suspense fallback={<Loading />}>
                         <Birds />
                     </Suspense>
 
-                    <Suspense>
+                    <Suspense fallback={<Loading />}>
                         <Temple />
                     </Suspense>
 

@@ -13,6 +13,14 @@
     display: flex;
 }
 
+.u-hidden {
+    display: none;
+}
+
+.u-block {
+    display: block;
+}
+
 /* flex helpers */
 .u-flex-wrap {
     flex-wrap: wrap;
@@ -178,5 +186,5 @@
 /* Animations Delay */
 
 .u-anime-delay-1 {
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
