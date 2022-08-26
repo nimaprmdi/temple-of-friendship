@@ -1,3 +1,7 @@
 .c-modal {
-    padding: 48px;
+    padding: 16px;
+
+    @include mq($from: tablet) {
+        padding: 48px;
+    }
 }

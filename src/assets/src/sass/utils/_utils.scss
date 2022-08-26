@@ -164,7 +164,11 @@
 }
 
 .u-mt-24-px {
-    margin-top: 24px;
+    margin-top: 8px;
+
+    @include mq($from: tablet) {
+        margin-top: 24px;
+    }
 }
 
 .u-mr-5 {
@@ -186,5 +190,30 @@
 /* Animations Delay */
 
 .u-anime-delay-1 {
+    animation-delay: 1s;
+}
+
+.u-anime-delay-3 {
     animation-delay: 3s;
+}
+
+/* Line Height */
+.u-leading-1 {
+    line-height: 64px;
+}
+
+.u-leading-2 {
+    line-height: 32px;
+}
+
+.u-leading-3 {
+    line-height: 24px;
+}
+
+.u-leading-4 {
+    line-height: 16px;
+}
+
+.u-leading-5 {
+    line-height: 8px;
 }

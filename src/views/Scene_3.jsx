@@ -6,7 +6,7 @@ const Scene_3 = ({ page, onHandleViewChange }) => {
         page === "scene_3" && (
             <div className="u-fixed-container u-flex-center u-opacity-0 u-anime-fadeIn u-anime-delay-1">
                 <div className="c-modal u-color-white u-bg-primary u-radius u-max-w-50 u-color-white">
-                    <h1 className="u-no-margin">Hope you enjoyed!</h1>
+                    <h1 className="u-no-margin u-leading-3">Hope you enjoyed!</h1>
 
                     <p className="h3 u-no-margin u-mt-24-px">
                         This website created by NimaPm for Practcing purposes and special thanks to Eggnot for (3D
@@ -17,11 +17,7 @@ const Scene_3 = ({ page, onHandleViewChange }) => {
                         .
                     </p>
 
-                    <p className="h3 u-no-margin">
-                        Also i would like to thank to Pixabay for the free license music that i used in this project.
-                    </p>
-
-                    <h1 className="u-no-margin u-mt-24-px">Let’s Talk!</h1>
+                    <h1 className="u-no-margin u-mt-24-px u-leading-3">Let’s Talk!</h1>
 
                     <p className="h3 u-no-margin u-mt-8-px">
                         Your are more than welcome to contact me so Let’s be social.

@@ -7,7 +7,7 @@ const Scene_1 = ({ page, onHandleViewChange, isAnimeLoaded }) => {
         page === "scene_1" && (
             <div className="u-fixed-container u-flex-left-center u-opacity-0 u-anime-fadeIn u-anime-delay-1">
                 <div className="c-modal u-color-white u-bg-primary u-radius u-max-w-45 u-color-white u-ml-5">
-                    <h1 className="u-no-margin">Story of Temple Of Friendship</h1>
+                    <h1 className="u-no-margin u-leading-3">Story of Temple Of Friendship</h1>
 
                     <p className="h3 u-no-margin u-mt-24-px">
                         The Temple of Friendship (German: Freundschaftstempel) is a small, round building in Sanssouci
