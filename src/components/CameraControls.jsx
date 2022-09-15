@@ -2,9 +2,7 @@ import { useEffect } from "react";
 import state from "../state";
 import { useFrame } from "@react-three/fiber";
 
-const CameraControls = ({ setIsAnimeLoaded }) => {
-    useEffect(() => {}, [setIsAnimeLoaded]);
-
+const CameraControls = ({}) => {
     useFrame(({ camera, scene }) => {
         if (state.activeMesh.name !== state.activeMeshName) {
             state.activeMesh = scene.getObjectByName(state.activeMeshName) || {};

@@ -21,9 +21,7 @@ import "./assets/css/css.css";
 // import DatGui, { DatNumber, DatColor } from "react-dat-gui";
 
 function App() {
-    const [currentView, setCurrentView] = useState("home");
     const [page, setPage] = useState("home");
-    const [isAnimeLoaded, setIsAnimeLoaded] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
 
     function Loading() {
@@ -119,7 +117,6 @@ function App() {
         state.cameraFov = sets[animationName].cameraFov;
         state.shouldUpdate = true;
         setPage(animationName);
-        setCurrentView(animationName);
     };
 
     return (
@@ -152,7 +149,7 @@ function App() {
             >
                 <CustomMesh />
 
-                <CameraControls setIsAnimeLoaded={setIsAnimeLoaded} />
+                <CameraControls />
 
                 {/* <color attach="background" args={[opts.bgColor]} /> */}
 

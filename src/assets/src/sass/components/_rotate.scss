@@ -6,10 +6,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    position: relative;
     align-content: center;
     position: absolute;
-    z-index: 90000000000000000000000;
+    z-index: 9000;
 
     @include mq($and: "(orientation: landscape)") {
         display: none;
